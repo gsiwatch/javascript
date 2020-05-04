@@ -1,3 +1,4 @@
+// example of defining things as obj property and then accessing it as a object function property
 const obj = {
   message: ['hi', 'this', 'is', 'gaurish'],
   print: function() {
@@ -5,7 +6,6 @@ const obj = {
   }
 }
 obj.print();
-
 
 /**
  * spread operator example 
@@ -18,5 +18,4 @@ obj.print();
    console.log(first);
    console.log(remaining);
  }
-
 direction('north', 'south', 'east', 'west');
