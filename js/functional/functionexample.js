@@ -11,7 +11,6 @@ obj.print();
  * spread operator example 
  *    we can also use spread operator to collect function arguments as an array
  */
-
  // we can also use reverse() function to reverse the array elements
  const direction = (...args) => {
    const [first, ...remaining] = args;
