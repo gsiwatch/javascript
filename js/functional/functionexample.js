@@ -18,3 +18,14 @@ obj.print();
    console.log(remaining);
  }
 direction('north', 'south', 'east', 'west');
+
+// how react do in declaritive fashion:
+// const { render } = ReachDOM; 
+
+// const welcome = () => (
+//   <div id="welcome">
+//     <h1>Hello World</h1>
+//   </div>
+// );
+
+// render(<Welcome />, document.getElementById("target"));
