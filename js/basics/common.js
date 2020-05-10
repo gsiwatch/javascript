@@ -71,3 +71,57 @@ const todo = {
     }
 }
 todo.add();
+
+/**
+ * loops
+ *  foreach
+ *  .map
+ *  for in
+ */
+
+ for (let i=0; i < 10; i++) {
+    if (i === 2) {
+        console.log(i);
+        // continue;
+    }
+    // break;
+ }
+
+ // while loop
+//  while(<condition>){
+//  }
+
+// do while loop -- is going to run atleast once no matter what
+// 
+let i = 10;
+
+do {
+    console.log(i);
+    i++;
+} while(i<10);
+
+// array 
+// to iterate over array we can use 
+//   1. for -> for (let i=0; i < array.length; i++)
+//   2. forEach on array
+//          it can take in 3 things: 1. first element, index, complete  array
+//   3. .map: if a client want to return different array 
+//              after looping over
+// 
+
+// forEach example:
+
+
+// for in loop:
+const user = {
+    firstName: 'test',
+    lastName: 'in',
+    description: 'loop',
+}
+for (let x in user) {
+    // here x will give the key
+    console.log(`${x}: ${user[x]}`);
+    if (x !== 'firstName') continue;
+        console.log(user[x]); // print only test
+        // break;  // will break out of the for loop
+}
