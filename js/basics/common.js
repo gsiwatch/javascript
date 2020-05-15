@@ -112,16 +112,40 @@ do {
 // forEach example:
 
 
-// for in loop:
+// for in loop and for of loop
+/**
+ * for in loop is for enumerator: means something that do not have order
+ *      for example object
+ * for of is used for iterator meaning something that does have an order
+ *      for example array
+ * 
+ *      enumerator can be an iterator but iterator cannot be an enumarator
+ *      meaning for in can be used on array but for of cannot be used on object
+ */
 const user = {
     firstName: 'test',
     lastName: 'in',
     description: 'loop',
 }
-for (let x in user) {
+for (let key in user) { // enumerator
     // here x will give the key
-    console.log(`${x}: ${user[x]}`);
-    if (x !== 'firstName') continue;
-        console.log(user[x]); // print only test
-        // break;  // will break out of the for loop
+    console.log('key is:', key);
+    console.log('value is:', user[key]);
 }
+const userArray = [
+    {
+        firstName: 'test',
+    },
+    {
+        firstName: 'test1',
+    }
+]
+for (let index in userArray) {
+    console.log('key is: ', index);
+    console.log('value is: ', userArray[index]);
+}
+
+// for (let key of user) { // this will fail saying user is not iterable
+//     console.log('key is: ', key);
+//     console.log('value is: ', user[value]);
+// }
