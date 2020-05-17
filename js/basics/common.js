@@ -149,3 +149,9 @@ for (let index in userArray) {
 //     console.log('key is: ', key);
 //     console.log('value is: ', user[value]);
 // }
+
+// and we can use for of on userArray -- to process iterator
+for (let index of userArray) {
+    console.log('key is: ', index);
+    console.log('value is: ', userArray[index]);
+}
