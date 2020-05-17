@@ -10,4 +10,9 @@ window.alert('hello ' + input);
  * document.doctype: will give us the doctype
  * document.URL: will give us the url
  * document.contentType: will give us the content Type
+ * document.forms: to access the forms
+ * document.links: give the collection of links
+ * document.images: to get the collection of images
+ * documet.scripts: to get the collection of scripts
+ * document.scripts[2].getAttribute('src') // to get src attribute of 3 element of an array
  */
